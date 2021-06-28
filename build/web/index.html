@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+
+    <body>
+        <h1>
+            <i class="fas fa-university" style="float:left;font-size:45px;"> LMS</i>
+            <span style="margin-right:8.5%;">Login Page</span>
+        </h1>
+        <div align="center"><i class="far fa-user-circle" style="font-size:100px;"></i></div>
+        <br>
+        <form method="post" name="LoginForm" action="loginlogs.jsp">
+            <table>   
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="u_name"/></td>
+                </tr>  
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="u_pass"/></td>  
+                </tr>  
+                <tr>
+                    <td>Designation:</td>
+                    <td>
+                        <select id="dsgn" name="dsgn" style="width:100%">
+                            <option value="admin">Admin</option>  
+                            <option value="faculty">Faculty</option>  
+                            <option value="student">Student</option>  
+                        </select>  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type = "submit" value = "Login" style="width:100%"/></td> 
+                </tr>
+            </table>
+        </form>
+        
+        <footer>
+            <div align="center">
+                Made with ♥ by, 
+                Pooja & Chaitanya.
+            </div>
+            <div>
+                Email us:
+                <a href="mailto:pooja.kaulgud@somaiya.edu">Pooja</a>
+                <a href="mailto:c.bandiwdekar@somaiya.edu">Chaitanya</a>
+            </div>
+            <div>
+                <div>© <span id="year"></span>
+                    <script>
+                        var d = new Date();
+                        var n = d.getFullYear();
+                        document.getElementById("year").innerHTML = n;
+                    </script>
+                    Copyright. All Rights Reserved.
+                  </div>
+                <div class="footer-icons">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fas fa-envelope"></i>
+                </div>
+            </div>             
+            
+        </footer>
+    </body>
+</html>

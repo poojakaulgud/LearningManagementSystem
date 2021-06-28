@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Upload Notes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Styles/style.css">
+    </head>
+    <body>
+        <h1>Upload Notes</h1>
+        <div align="center">
+            <form method="post" action="notesupload.jsp" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <input type="file" name="notes" style="width:100%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject:
+                        </td>
+                        <td>
+                            <select id="subject" name="subject" style="width:100%">
+                                <option value="Maths">Maths</option>
+                                <option value="Chem">Chem</option>
+                                <option value="Phy">Phy</option>
+                                <option value="EEEE">EEEE</option>
+                                <option value="ED">ED</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Filename:
+                        </td>
+                        <td>
+                            <input type="text" name="filename" style="width:100%" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Upload" name="notes" style="width:100%">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

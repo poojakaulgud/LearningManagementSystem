@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../Styles/style.css">
+    </head>
+    <body>
+        <h1>Student Information</h1>
+        <form name="StudentProfileForm" method="post">  
+        <table>
+        <tr>
+            <td>ID:</td>
+            <td><input type="text" name="id" required/></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="uname"/></td>
+        </tr>  
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="pass"/></td> 
+        </tr>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="fname"/></td>
+        </tr>  
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lname"/></td> 
+        </tr> 
+        <tr>
+            <td>Branch:</td>
+            <td>
+                <select id="branch" name="branch" style="width:100%">
+                    <option value="Comps">Comps</option>
+                    <option value="IT">IT</option>
+                    <option value="EXTC">EXTC</option>
+                    <option value="ETRX">ETRX</option>
+                    <option value="Mech">Mech</option>
+                </select>
+            </td> 
+        </tr>
+        <tr>
+            <td>Semester:</td>
+            <td><input type="number" id="sem" name="sem" min="1" max="8" value="1"></td> 
+        </tr>         
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" id="gender" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="gender" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="gender" name="gender" value="other">
+                <label for="other">Other</label>
+            </td> 
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob"/></td> 
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email"/></td> 
+        </tr> 
+        <tr>
+            <td>Contact:</td>
+            <td><input type="tel" name="contact"/></td> 
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Add Student" onclick="document.StudentProfileForm.action='addstudent.jsp'" style="width:100%"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Update Student" onclick="document.StudentProfileForm.action='updatestudent.jsp'" style="width:100%"/>
+            </td>
+        </tr>
+        <tr>
+           <td colspan="2">
+                <input type="submit" value="Delete Student" onclick="document.StudentProfileForm.action='deletestudent.jsp'" style="width:100%"/>
+           </td>
+        </tr>   
+        </table>  
+        </form>
+    </body>
+</html>
